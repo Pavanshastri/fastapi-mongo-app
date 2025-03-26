@@ -8,7 +8,7 @@ from typing import Optional
 app = FastAPI()
 
 # MongoDB connection
-client = MongoClient("mongodb://localhost:27017")
+client = MongoClient("mongodb://127.0.0.1:27017")
 db = client["key_value_store"]
 collection = db["store"]
 
